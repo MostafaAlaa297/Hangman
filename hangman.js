@@ -1,17 +1,21 @@
-var seriesName = [
-  "breakingbad",
-  "peakyblinders",
-  "lacasaepapel",
-  "goblin",
-  "theOffice",
-  "bettercallsaul",
-  "fargo",
-  "deathnote",
-  "attackontitan",
-  "signal",
-  "sherlock",
-  "dark",
-  "thesimpsons"
+var charName = [
+  "ironman",
+  "thor",
+  "loki",
+  "oden",
+  "spiderman",
+  "blackwidow",
+  "thanos",
+  "captainamerica",
+  "hulk",
+  "blackpanther",
+  "wolverine",
+  "deadpool",
+  "antman",
+  "groot",
+  "nickfury",
+  "doctorstrange",
+  "hawkeye",
 ];
 
 let answer = "";
@@ -21,7 +25,7 @@ let guessed = [];
 let wordStatus = null;
 
 function randomWord() {
-  answer = seriesName[Math.floor(Math.random() * seriesName.length)];
+  answer = charName[Math.floor(Math.random() * seriesName.length)];
 }
 
 
@@ -63,7 +67,7 @@ function updateHangmanPicture() {
 
 function checkIfGameWon() {
   if (wordStatus === answer) {
-    document.getElementById('keyboard').innerHTML = '<span style="color:aqua;">You Won!!!</span>';
+    document.getElementById('keyboard').innerHTML = '<span style="color:navy;">You Won!!!</span>';
   }
 
 }
