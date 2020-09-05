@@ -15,7 +15,7 @@ var charName = [
   "groot",
   "nickfury",
   "doctorstrange",
-  "hawkeye",
+  "hawkeye"
 ];
 
 let answer = "";
