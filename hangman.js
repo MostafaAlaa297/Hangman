@@ -25,7 +25,7 @@ let guessed = [];
 let wordStatus = null;
 
 function randomWord() {
-  answer = charName[Math.floor(Math.random() * seriesName.length)];
+  answer = charName[Math.floor(Math.random() * charName.length)];
 }
 
 
